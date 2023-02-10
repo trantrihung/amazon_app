@@ -1,13 +1,13 @@
-import 'package:amazon_app/features/auth/screens/auth_screen.dart';
+import 'package:amazon_app/features/auth/screens/signin_screen.dart';
 import 'package:amazon_app/features/auth/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 
 Route<dynamic> generateRoute(RouteSettings routeSettings) {
   switch (routeSettings.name) {
-    case AuthScreen.routeName:
+    case SignIn.routeName:
       return MaterialPageRoute(
         settings: routeSettings,
-        builder: (_) => const AuthScreen(),
+        builder: (_) => const SignIn(),
       );
 
     case SignUp.routeName:

@@ -1,5 +1,5 @@
 import 'package:amazon_app/constants/global_variable.dart';
-import 'package:amazon_app/features/auth/screens/auth_screen.dart';
+import 'package:amazon_app/features/auth/screens/signin_screen.dart';
 import 'package:amazon_app/features/auth/screens/signup_screen.dart';
 import 'package:amazon_app/router.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       onGenerateRoute: (settings) => generateRoute(settings),
-      home: SignUp(),
+      home: const SignUp(),
     );
   }
 }
